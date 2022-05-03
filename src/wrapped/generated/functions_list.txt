@@ -1595,6 +1595,7 @@
 #() iFpiiiiip
 #() iFpiiiuwp
 #() iFpiiuuiu
+#() iFpiiuupp
 #() iFpiipppp
 #() iFpiuiipp
 #() iFpiupiii
@@ -2684,6 +2685,7 @@ wrappedlibc:
   - warnx
 - iFip:
   - fstat
+  - fstat64
 - iFpi:
   - __sigsetjmp
   - backtrace

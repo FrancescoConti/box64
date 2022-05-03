@@ -224,7 +224,7 @@ GO(XCreateColormap, pFpppi)
 GO(XCreateFontCursor, pFpu)
 GO(XCreateFontSet, pFppppp)
 GO(XCreateGC, pFppup)
-//GO(XCreateGlyphCursor
+GO(XCreateGlyphCursor, iFpiiuupp)
 GOM(XCreateIC, pFEpV)     // use vararg
 GOM(XCreateImage, pFEppuiipuuii)
 GO(dummy_XCreateImage, pFppuiipuuii)    // to have the wrapper
@@ -482,7 +482,7 @@ DATAB(_XInitDisplayLock_fn, sizeof(void*))
 // _XInitDynamicOM
 GO(XInitExtension, pFpp)
 GOM(XInitImage, iFEp)
-// _XInitImageFuncPtrs
+GO(_XInitImageFuncPtrs, vFp)
 // _XInitKeysymDB
 GO(XInitThreads, iFv)
 //GO(XInsertModifiermapEntry
@@ -635,7 +635,7 @@ GO(XkbLookupKeySym, iFpuupp)
 //GO(XkbNoteDeviceChanges
 //GO(XkbNoteMapChanges
 //GO(XkbNoteNameChanges
-//GO(XkbOpenDisplay
+GO(XkbOpenDisplay, pFpppppp)
 // _XkbPeekAtReadBuffer
 GO(XkbQueryExtension, iFpppppp)
 // _XkbReadBufferCopyKeySyms

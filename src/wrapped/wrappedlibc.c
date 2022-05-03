@@ -1100,6 +1100,15 @@ EXPORT int my_fstat(x64emu_t *emu, int fd, void* buf)
     return r;
 }
 
+EXPORT int my_fstat64(x64emu_t *emu, int fd, void* buf)
+{
+    (void)emu;
+    struct stat64 st;
+    int r = fstat64(fd, (struct stat64*)&st);
+    UnalignStat64(&st, buf);
+    return r;
+}
+
 EXPORT int my_fstatat(x64emu_t *emu, int fd, const char* path, void* buf, int flags)
 {
     (void)emu;

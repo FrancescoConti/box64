@@ -4,14 +4,14 @@
 
 //GO(XftCharExists, 
 //GO(XftCharFontSpecRender, 
-//GO(XftCharIndex, 
+GO(XftCharIndex, uFppu) 
 //GO(XftCharSpecRender, 
 //GO(XftColorAllocName, 
 //GO(XftColorAllocValue, 
 //GO(XftColorFree, 
 //GO(XftDefaultHasRender, 
 //GO(XftDefaultSet, 
-//GO(XftDefaultSubstitute, 
+GO(XftDefaultSubstitute, vFpip) 
 GO(XftDrawChange, vFpp)
 //GO(XftDrawCharFontSpec, 
 //GO(XftDrawCharSpec, 
@@ -19,10 +19,10 @@ GO(XftDrawChange, vFpp)
 GO(XftDrawCreate, pFpppp)
 //GO(XftDrawCreateAlpha, 
 //GO(XftDrawCreateBitmap, 
-//GO(XftDrawDestroy, 
+GO(XftDrawDestroy, vFp)
 //GO(XftDrawDisplay, 
 //GO(XftDrawDrawable, 
-//GO(XftDrawGlyphFontSpec, 
+GO(XftDrawGlyphFontSpec, vFpppi)
 //GO(XftDrawGlyphs, 
 //GO(XftDrawGlyphSpec, 
 //GO(XftDrawPicture, 
@@ -38,7 +38,7 @@ GO(XftDrawString32, vFpppiipi)
 //GO(XftDrawStringUtf8, 
 //GO(XftDrawVisual, 
 //GO(XftFontCheckGlyph, 
-//GO(XftFontClose, 
+GO(XftFontClose, vFpp) 
 //GO(XftFontCopy, 
 //GO(XftFontInfoCreate, 
 //GO(XftFontInfoDestroy, 
@@ -53,13 +53,13 @@ GO(XftFontOpenPattern, pFpp)
 GO(XftFontOpenXlfd, pFpip)
 //GO(XftFontUnloadGlyphs, 
 //GO(XftGetVersion, 
-//GO(XftGlyphExtents, 
+GO(XftGlyphExtents, vFpppip) 
 //GO(XftGlyphFontSpecRender, 
 //GO(XftGlyphRender, 
 //GO(XftGlyphSpecRender, 
 //GO(XftInit, 
 //GO(XftInitFtLibrary, 
-//GO(XftListFonts, 
+GO(XftListFonts, pFpippppppppppppppppp) // use ...
 //GO(XftLockFace, 
 //GO(XftNameParse, 
 //GO(XftNameUnparse, 
@@ -78,4 +78,4 @@ GO(XftTextExtents32, vFpppip)
 //GO(XftTextRenderUtf16, 
 //GO(XftTextRenderUtf8, 
 //GO(XftUnlockFace, 
-//GO(XftXlfdParse, 
+GO(XftXlfdParse, pFpii) 
